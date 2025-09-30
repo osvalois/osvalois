@@ -1,0 +1,130 @@
+# GitHub Profile Configuration for Oscar Valois
+# This file contains configuration settings for various GitHub profile elements
+
+profile:
+  username: "osvalois"
+  display_name: "Oscar Valois"
+  tagline: "SecDevOps Engineer & Solutions Architect"
+  bio: "Building the future with AI orchestration and innovative solutions"
+  location: "Mexico"
+  website: "https://osvalois.tech"
+
+theme:
+  primary_color: "#6366F1"
+  secondary_color: "#4F46E5"
+  accent_color: "#8B5CF6"
+  background_theme: "tokyonight"
+
+organizations:
+  - name: "CUERVO.AI"
+    role: "Founder & CTO"
+    url: "https://github.com/cuervo-ai"
+    description: "AI orchestration platform for unified cloud and local model management"
+    avatar: "https://avatars.githubusercontent.com/u/230785368"
+
+  - name: "EurekaArchiTech"
+    role: "Solutions Architect"
+    url: "https://github.com/eureka-architech"
+    description: "Digital transformation for Mexican SMEs"
+    avatar: "https://avatars.githubusercontent.com/u/232090419"
+
+skills:
+  primary:
+    - "Rust"
+    - "TypeScript"
+    - "Python"
+    - "Go"
+    - "JavaScript"
+
+  frameworks:
+    - "Node.js"
+    - "NestJS"
+    - "React"
+    - "Next.js"
+    - "Tauri"
+    - "Spring Boot"
+
+  cloud_devops:
+    - "AWS"
+    - "Azure"
+    - "Docker"
+    - "Kubernetes"
+    - "Terraform"
+
+  ai_ml:
+    - "TensorFlow"
+    - "PyTorch"
+    - "LangChain"
+    - "Hugging Face"
+    - "OpenAI API"
+
+featured_projects:
+  - name: "MUTS"
+    description: "Multi-threaded system optimization toolkit"
+    tech_stack: ["Rust", "Tauri", "AI/ML"]
+    status: "Active Development"
+    private: false
+
+  - name: "CUERVO Platform"
+    description: "AI orchestration and model management"
+    tech_stack: ["Rust", "TypeScript", "Cloud"]
+    status: "Production"
+    private: true
+
+  - name: "TooManyVoices"
+    description: "AGI with multiple cognitive perspectives"
+    tech_stack: ["Python", "TensorFlow", "NLP"]
+    status: "Research"
+    private: false
+
+  - name: "Zhen Security Toolkit"
+    description: "Professional security research tools"
+    tech_stack: ["Python", "Security APIs"]
+    status: "Stable"
+    private: false
+
+social_links:
+  linkedin: "https://linkedin.com/in/oscar-valois-331892287"
+  website: "https://osvalois.tech"
+  dev_to: "https://dev.to/osvalois"
+  docker_hub: "https://hub.docker.com/u/osvalois"
+  email: "hello@osvalois.tech"
+
+widgets:
+  github_stats:
+    enabled: true
+    theme: "tokyonight"
+    show_icons: true
+    include_all_commits: true
+    count_private: true
+
+  language_stats:
+    enabled: true
+    layout: "compact"
+    langs_count: 8
+    hide_border: true
+
+  streak_stats:
+    enabled: true
+    theme: "tokyonight"
+    hide_border: true
+
+  trophy:
+    enabled: true
+    theme: "discord"
+    no_frame: true
+    no_bg: true
+
+  activity_graph:
+    enabled: true
+    theme: "tokyo-night"
+    area: true
+    hide_border: true
+
+readme_features:
+  typing_animation: true
+  visitor_counter: true
+  dynamic_quotes: false
+  real_time_stats: true
+  responsive_design: true
+  dark_mode_support: true

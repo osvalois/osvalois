@@ -1,0 +1,57 @@
+name: Update Profile README
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/update-readme.yml'
+      - 'scripts/**'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    name: Update Profile README
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests PyYAML feedparser
+
+    - name: Update README
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        python scripts/update-profile.py .github-profile-config.yml update
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff --staged --quiet || git commit -m "🤖 Auto-update profile README
+
+        🚀 Generated with GitHub Actions
+        🕐 $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+
+        Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        git push
+
+    - name: Generate profile report
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        python scripts/update-profile.py .github-profile-config.yml report

@@ -1,0 +1,72 @@
+name: GitHub Profile Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: osvalois
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: America/Mexico_City
+
+          # Features
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+
+          plugin_followup: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: repositories
+
+          plugin_code: yes
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_days: 3
+          plugin_code_visibility: public
+
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_days: 14
+          plugin_activity_visibility: all
+          plugin_activity_timestamps: yes
+          plugin_activity_filter: all

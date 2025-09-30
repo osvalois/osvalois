@@ -1,0 +1,127 @@
+{
+  "custom_badges": {
+    "cuervo_ai": {
+      "label": "CUERVO.AI",
+      "message": "Founder & CTO",
+      "color": "6366F1",
+      "logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+      "style": "for-the-badge"
+    },
+    "eureka_architech": {
+      "label": "EurekaArchiTech",
+      "message": "Solutions Architect",
+      "color": "8B5CF6",
+      "logo": "building",
+      "style": "for-the-badge"
+    },
+    "rust_expert": {
+      "label": "Rust",
+      "message": "Systems Expert",
+      "color": "000000",
+      "logo": "rust",
+      "style": "for-the-badge"
+    },
+    "ai_specialist": {
+      "label": "AI/ML",
+      "message": "Specialist",
+      "color": "FF6B6B",
+      "logo": "tensorflow",
+      "style": "for-the-badge"
+    },
+    "devops_engineer": {
+      "label": "DevOps",
+      "message": "Engineer",
+      "color": "4ECDC4",
+      "logo": "docker",
+      "style": "for-the-badge"
+    },
+    "cloud_architect": {
+      "label": "Cloud",
+      "message": "Architect",
+      "color": "45B7D1",
+      "logo": "amazonwebservices",
+      "style": "for-the-badge"
+    }
+  },
+  "social_badges": {
+    "linkedin": {
+      "url": "https://linkedin.com/in/oscar-valois-331892287",
+      "label": "LinkedIn",
+      "message": "Connect",
+      "color": "0077B5",
+      "logo": "linkedin"
+    },
+    "website": {
+      "url": "https://osvalois.tech",
+      "label": "Website",
+      "message": "osvalois.tech",
+      "color": "000000",
+      "logo": "About.me"
+    },
+    "dev_to": {
+      "url": "https://dev.to/osvalois",
+      "label": "DEV.to",
+      "message": "@osvalois",
+      "color": "0A0A0A",
+      "logo": "devdotto"
+    },
+    "docker_hub": {
+      "url": "https://hub.docker.com/u/osvalois",
+      "label": "Docker Hub",
+      "message": "osvalois",
+      "color": "2496ED",
+      "logo": "docker"
+    }
+  },
+  "stats_widgets": {
+    "github_stats": {
+      "url": "https://github-readme-stats.vercel.app/api?username=osvalois&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true",
+      "alt": "Oscar's GitHub Stats"
+    },
+    "top_languages": {
+      "url": "https://github-readme-stats.vercel.app/api/top-langs/?username=osvalois&layout=compact&langs_count=8&theme=tokyonight&hide_border=true",
+      "alt": "Top Languages"
+    },
+    "github_streak": {
+      "url": "https://github-readme-streak-stats.vercel.app/?user=osvalois&theme=tokyonight&hide_border=true",
+      "alt": "GitHub Streak"
+    },
+    "github_trophy": {
+      "url": "https://github-profile-trophy.vercel.app/?username=osvalois&theme=discord&no-frame=true&no-bg=true&margin-w=4&row=1",
+      "alt": "GitHub Trophies"
+    },
+    "activity_graph": {
+      "url": "https://github-readme-activity-graph.vercel.app/graph?username=osvalois&bg_color=1a1b27&color=70a5fd&line=70a5fd&point=ffffff&area=true&hide_border=true",
+      "alt": "Contribution Graph"
+    }
+  },
+  "typing_animation": {
+    "lines": [
+      "SecDevOps Engineer & Solutions Architect",
+      "AI & Blockchain Systems Specialist",
+      "Full-Stack Developer & Tech Innovator",
+      "Building the Future with Code & AI"
+    ],
+    "config": {
+      "font": "JetBrains Mono",
+      "weight": 600,
+      "size": 28,
+      "duration": 3000,
+      "pause": 1000,
+      "color": "6366F1",
+      "center": true,
+      "vCenter": true,
+      "width": 800,
+      "height": 60
+    }
+  },
+  "color_scheme": {
+    "primary": "#6366F1",
+    "secondary": "#4F46E5",
+    "accent": "#8B5CF6",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "info": "#3B82F6"
+  }
+}

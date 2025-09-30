@@ -14,6 +14,8 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     name: Update Profile README
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout
